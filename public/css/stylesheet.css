@@ -104,7 +104,10 @@ body {
 }
 
 table#main_content_table td {
-  text-align: middle;
   width: 50%;
   height: 50%;
+}
+
+table#main_content_table td p {
+  padding: 15px;
 }
