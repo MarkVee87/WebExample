@@ -6,6 +6,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #585858;
+  margin-right: 150px;
 }
 
 #navbar a {
@@ -27,24 +28,52 @@ body {
   color: black;
 }
 
-div.bottom_right_footer {
-  padding:10px;
+#sidenavbar_me_icon {
+  float: center;
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+#sidenavbar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #585858;
+  overflow-x: hidden;
+}
+
+#sidenavbar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #f2f2f2;
+  display: block;
+}
+
+#sidenavbar a:hover {
+    background-color: #D5D5D4;
+    color: black;
+}
+
+#main_content_area {
+    margin-left: 10px;
+}
+
+#footer {
+  padding: 10px;
   font-style: italic;
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 300px;
-  text-align: right;
+  width: 100%;
+  text-align: center;
 }
 
-#mugshot {
-  max-width:25%;
-  height:auto;
-  padding: 25px;
-}
-
-#bacon {
-  max-width:10%;
-  height:auto;
-  padding-left:10px;
+#footer_me {
+  max-height: 12px;
+  width: auto;
 }
