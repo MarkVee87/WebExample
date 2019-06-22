@@ -6,7 +6,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #585858;
-  margin-right: 150px;
+  width: 90%
 }
 
 #navbar a {
@@ -19,12 +19,12 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #D5D5D4;
+  background-color: #d5d5d4;
   color: black;
 }
 
 #navbar a.active {
-  background-color: #FFC552;
+  background-color: #ffc552;
   color: black;
 }
 
@@ -37,7 +37,7 @@ body {
 
 #sidenavbar {
   height: 100%;
-  width: 150px;
+  width: 10%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -59,21 +59,52 @@ body {
     color: black;
 }
 
-#main_content_area {
-    margin-left: 10px;
-}
-
 #footer {
   padding: 10px;
   font-style: italic;
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 110%;
   text-align: center;
 }
 
 #footer_me {
   max-height: 12px;
   width: auto;
+}
+
+#main_content_area {
+  margin: 7px;
+}
+
+#main_content_table {
+  height: 90%;
+  width: 90%;
+}
+
+#green_content_area {
+  height: 100%;
+  background: #d9edc2;
+}
+
+#orange_content_area {
+  height: 100%;
+  background: #ffe39e;
+}
+
+#yellow_content_area {
+  height: 100%;
+  background: #fef5c4;
+}
+
+#blue_content_area {
+  height: 100%;
+  background: #d8ecf7;
+}
+
+table#main_content_table td {
+  text-align: middle;
+  width: 50%;
+  height: 50%;
 }
