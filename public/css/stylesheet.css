@@ -129,7 +129,7 @@ table#main_content_table td {
   height: 40%;
 }
 
-table#main_content_table td p {
+table#main_content_table td p.content {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
