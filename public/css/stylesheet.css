@@ -1,4 +1,6 @@
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -84,30 +86,53 @@ body {
 }
 
 #green_content_area {
+  overflow-y: auto;
   height: 100%;
   background: #d9edc2;
 }
 
 #orange_content_area {
+  overflow-y: auto;
   height: 100%;
-  background: #ffe39e;
+  background: #ffeacd;
 }
 
-#yellow_content_area {
+#red_content_area {
+  overflow-y: auto;
   height: 100%;
-  background: #fef5c4;
+  background: #ffc7c7;
 }
 
 #blue_content_area {
+  overflow-y: auto;
   height: 100%;
   background: #d8ecf7;
 }
 
+#purple_content_area {
+  overflow-y: auto;
+  height: 100%;
+  background: #efe4f7;
+}
+
 table#main_content_table td {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 table#main_content_table td p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+table#main_content_table td h3 {
   padding: 15px;
+}
+
+table#main_content_table td img {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 90%;
 }
