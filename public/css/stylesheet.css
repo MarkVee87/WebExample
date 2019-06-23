@@ -49,6 +49,7 @@ body {
 }
 
 #sidenavbar a {
+  text-align: center;
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
@@ -56,9 +57,17 @@ body {
   display: block;
 }
 
+#sidenavbar h3 {
+  text-align: center;
+  padding: 3px;
+  font-size: 17px;
+  color: #f2f2f2;
+  display: block;
+}
+
 #sidenavbar a:hover {
-    background-color: #D5D5D4;
-    color: black;
+  background-color: #D5D5D4;
+  color: black;
 }
 
 #footer {
