@@ -8,7 +8,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #585858;
-  width: 90%
+  width: 90%;
 }
 
 #navbar a {
@@ -28,6 +28,15 @@ body {
 #navbar a.active {
   background-color: #ffc552;
   color: black;
+}
+
+#navbar #navbar_clock {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 #sidenavbar_me_icon {
@@ -76,7 +85,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 110%;
+  width: 100%;
   text-align: center;
 }
 

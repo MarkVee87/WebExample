@@ -1,4 +1,9 @@
 window.onload = function includeHTML() {
+  loadCommonHTML();
+  loadNavbarDateAndTime();
+};
+
+function loadCommonHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
@@ -24,4 +29,10 @@ window.onload = function includeHTML() {
       return;
     }
   }
+};
+
+function loadNavbarDateAndTime() {
+  var d = new Date();
+  var formattedDate = d.getDay() + " / " + d.getMonth() + " / " + d.getFullYear();
+  document.getElementById('navbar_clock').innerHTML = formattedDate;
 };

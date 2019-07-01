@@ -3,7 +3,6 @@
         <title>Marks Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <script src="js/includehtml.js"></script>
     </head>
 
     <body>
@@ -11,6 +10,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a class="active" href="#contact">Contact</a>
+            <div id="navbar_clock" style="color: white;"></div>
         </div>
 
         <div get-external-html="commonhtml/sidebarnav.html" id="sidenavbar"></div>
@@ -21,4 +21,6 @@
 
         <div get-external-html="commonhtml/footer.html" id="footer"></div>
     </body>
+
+    <script src="js/onload.js"></script>
 </html>
