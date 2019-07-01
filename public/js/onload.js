@@ -5,34 +5,40 @@ window.onload = function includeHTML() {
 
 function loadCommonHTML() {
   var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("get-external-html");
     if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("get-external-html");
           loadCommonHTML();
         }
       }
       xhttp.open("GET", file, true);
       xhttp.send();
-      /*exit the function:*/
       return;
     }
   }
 };
 
 function loadNavbarDateAndTime() {
-  var d = new Date();
-  var formattedDate = d.getDay() + " / " + d.getMonth() + " / " + d.getFullYear();
-  document.getElementById('navbar_clock').innerHTML = formattedDate;
+  var now = new Date();
+  var year = now.getFullYear();
+  var month = addAZero(now.getMonth());
+  var day = addAZero(now.getDay());
+  var hours = addAZero(now.getHours());
+  var minutes = addAZero(now.getMinutes());
+  var seconds = addAZero(now.getSeconds());
+  document.getElementById('navbar_clock').innerHTML = hours + ":" + minutes + ":" + seconds + "&nbsp&nbsp&nbsp" + day + "-" + month + "-" + year;
+  setTimeout(loadNavbarDateAndTime, 500);
+};
+
+function addAZero(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
 };
