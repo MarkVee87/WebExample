@@ -70,62 +70,22 @@ body {
 }
 
 #main_content_area {
+  width: 90%;
   margin: 7px;
 }
 
-#main_content_table {
-  height: 90%;
-  width: 90%;
+#social_stuff {
+  background-color: orange;
 }
 
-#green_content_area {
-  overflow-y: auto;
-  height: 100%;
-  background: #d9edc2;
+#recent_updates {
+  background-color: lime;
 }
 
-#orange_content_area {
-  overflow-y: auto;
-  height: 100%;
-  background: #ffeacd;
+#something_else {
+  background-color: red;
 }
 
-#red_content_area {
-  overflow-y: auto;
-  height: 100%;
-  background: #ffc7c7;
-}
-
-#blue_content_area {
-  overflow-y: auto;
-  height: 100%;
-  background: #d8ecf7;
-}
-
-#purple_content_area {
-  overflow-y: auto;
-  height: 100%;
-  background: #efe4f7;
-}
-
-table#main_content_table td {
-  width: 40%;
-  height: 40%;
-}
-
-table#main_content_table td p.content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-
-table#main_content_table td h3 {
-  padding: 15px;
-}
-
-table#main_content_table td img {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  width: 90%;
+#another_thing {
+  background-color: cyan;
 }
